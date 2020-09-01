@@ -38,7 +38,7 @@ module.exports = {
         },
     },
     rules: {
-        'no-use-before-define': ['error', { functions: false }],
+        'no-use-before-define': 'off',
         'class-methods-use-this': 'off',
         'no-unused-vars': 'off',
         'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
