@@ -34,18 +34,18 @@ module.exports = {
     rules: {
         'no-use-before-define': ['error', { functions: false }],
         'class-methods-use-this': 'off',
+        'no-unused-vars': 'off',
         'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
         '@typescript-eslint/explicit-module-boundary-types': 'off',
-        '@typescript-eslint/no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-vars': [
+            'error',
+            { varsIgnorePattern: '^_', argsIgnorePattern: '^_' },
+        ],
         'import/extensions': [
             'error',
             'ignorePackages',
             { js: 'never', jsx: 'never', mjs: 'never', ts: 'never', tsx: 'never' },
         ],
         'import/order': [2, { alphabetize: { order: 'asc' } }],
-        'no-unused-vars': [
-            'error',
-            { varsIgnorePattern: '^_', argsIgnorePattern: '^_' },
-        ],
     },
 };
