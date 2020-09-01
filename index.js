@@ -41,6 +41,7 @@ module.exports = {
             'error',
             { varsIgnorePattern: '^_', argsIgnorePattern: '^_' },
         ],
+        '@typescript-eslint/no-non-null-assertion': 'off',
         'import/extensions': [
             'error',
             'ignorePackages',
