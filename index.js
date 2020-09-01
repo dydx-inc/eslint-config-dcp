@@ -33,6 +33,7 @@ module.exports = {
     },
     rules: {
         'no-use-before-define': ['error', { functions: false }],
+        'class-methods-use-this': 'off',
         'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/no-unused-vars': 'off',
