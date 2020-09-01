@@ -42,6 +42,7 @@ module.exports = {
         'class-methods-use-this': 'off',
         'no-unused-vars': 'off',
         'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
+        'react/require-default-props': 'off',
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/no-unused-vars': [
             'error',
