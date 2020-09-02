@@ -59,6 +59,6 @@ module.exports = {
             { js: 'never', jsx: 'never', mjs: 'never', ts: 'never', tsx: 'never' },
         ],
         'import/order': [2, { alphabetize: { order: 'asc' } }],
-        "import/no-relative-parent-imports": "off"
+        'import/no-relative-parent-imports': 'off'
     },
 };
