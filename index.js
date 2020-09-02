@@ -25,17 +25,14 @@ module.exports = {
     },
     plugins: ['react', '@typescript-eslint'],
     settings: {
-        'import/resolver': {
-            node: {
-                extensions: [
-                    ".js",
-                    ".jsx",
-                    ".json",
-                    ".ts",
-                    ".tsx"
-                ],
-            },
-        },
+        'import/extensions': [
+            ".js",
+            ".jsx",
+            ".json",
+            ".ts",
+            ".tsx"
+        ],
+        'import/resolver': "webpack"
     },
     rules: {
         'no-use-before-define': 'off',
