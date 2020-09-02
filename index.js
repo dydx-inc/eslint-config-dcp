@@ -45,6 +45,7 @@ module.exports = {
         'no-unused-vars': 'off',
         'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
         'react/require-default-props': 'off',
+        'react/destructuring-assignment':'off',
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "error",
         '@typescript-eslint/explicit-module-boundary-types': 'off',
