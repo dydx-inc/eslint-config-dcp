@@ -23,7 +23,7 @@ module.exports = {
         ecmaVersion: 2018,
         sourceType: 'module',
     },
-    plugins: ['react', '@typescript-eslint'],
+    plugins: ['react', 'react-hooks', '@typescript-eslint'],
     settings: {
         "import/resolver": {
             node: {
@@ -45,6 +45,8 @@ module.exports = {
         'no-unused-vars': 'off',
         'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
         'react/require-default-props': 'off',
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "error",
         '@typescript-eslint/explicit-module-boundary-types': 'off',
         '@typescript-eslint/no-unused-vars': [
             'error',
@@ -57,5 +59,6 @@ module.exports = {
             { js: 'never', jsx: 'never', mjs: 'never', ts: 'never', tsx: 'never' },
         ],
         'import/order': [2, { alphabetize: { order: 'asc' } }],
+        "import/no-relative-parent-imports": "error"
     },
 };
