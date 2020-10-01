@@ -40,15 +40,17 @@ module.exports = {
         }
     },
     rules: {
+        'no-shadow': 'off',
+        'no-unused-vars': 'off',
         'no-use-before-define': 'off',
         'class-methods-use-this': 'off',
-        'no-unused-vars': 'off',
         'react/jsx-filename-extension': ['error', { extensions: ['.jsx', '.tsx'] }],
         'react/require-default-props': 'off',
         'react/destructuring-assignment':'off',
         "react-hooks/rules-of-hooks": "error",
         "react-hooks/exhaustive-deps": "error",
         '@typescript-eslint/explicit-module-boundary-types': 'off',
+        '@typescript-eslint/no-shadow': 'error',
         '@typescript-eslint/no-unused-vars': [
             'error',
             { varsIgnorePattern: '^_', argsIgnorePattern: '^_' },
